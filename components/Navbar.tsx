@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
+import { MobileNav } from "./shared/MobileNav";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -57,6 +58,10 @@ export const Navbar = () => {
           <Link href="/contact">
             <Button>Hire Me</Button>
           </Link>
+        </div>
+        {/** Mobile  Nav */}
+        <div className="block xl:hidden">
+          <MobileNav navLinks={navLinks} />
         </div>
       </div>
     </nav>

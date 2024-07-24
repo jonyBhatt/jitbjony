@@ -5,10 +5,10 @@ import { MagicButton } from "./ui/magic-button";
 
 export const Hero = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <div>
-        <div className="absolute top-0 right-0 bg-pink-600   blur-[150px] w-56  h-32 rounded-full"></div>
-        <div className="absolute bottom-0 left-0 bg-blue-600 blur-[120px] w-56  animate-pulse  h-32 rounded-full"></div>
+        <div className="absolute top-0 right-0 bg-pink-600   blur-[150px] w-56  -z-10  h-32 rounded-full"></div>
+        <div className="absolute bottom-0 left-0 bg-blue-600 blur-[120px] w-56  animate-pulse z-20  h-32 rounded-full"></div>
       </div>
       <div>
         <div className="h-screen w-full dark:bg-black-100   dark:bg-grid-white/[0.03] bg-grid-black/[0.2] absolute top-0 left-0 flex items-center justify-center -z-10">
@@ -16,7 +16,7 @@ export const Hero = () => {
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         </div>
 
-        <div className="flex justify-center relative my-20 z-10">
+        <div className="flex justify-center relative my-56 md:my-40 z-10">
           <div className="max-w-[89vw] md:maz-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
               Dynamic web magic with Nextjs

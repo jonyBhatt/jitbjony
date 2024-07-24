@@ -3,6 +3,8 @@ import { JetBrains_Mono as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/Navbar";
+import { TransitionPages } from "@/components/TransitionPages";
+import { StairTransiiton } from "@/components/animations/StairTransiiton";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,7 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn("font-primary  antialiased", fontSans.variable)}>
         <Navbar />
-        {children}
+        <StairTransiiton />
+        <TransitionPages>{children}</TransitionPages>
       </body>
     </html>
   );
